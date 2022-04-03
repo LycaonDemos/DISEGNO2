@@ -1,0 +1,324 @@
+/*--------------TIPO DE LETRA--------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+/*RESETEAR ESTILOS DEL NAVEGADOR*/
+/**{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}*/
+
+/*--------------------------------*/
+/*--------------BODY--------------*/
+
+body {
+  background-color: rgb(240, 192, 22);
+}
+
+h1{
+  padding: 50px;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+h2{
+  font-family: "Roboto", sans-serif;
+  padding: 1px;
+  text-align: center;
+}
+
+/*IMAGEN DE LOGO DISEGNO*/
+.imglogo {
+  border: 40px;
+  padding: 20px;
+  height: 100px;
+  background-color: rgb(77, 77, 77);
+  
+}
+
+/*--------------------------------*/
+/*--------------HEADER--------------*/
+
+header {
+  display: flex;
+  background-color: rgb(77, 77, 77);
+  padding: 12px;
+}
+
+.listindex {
+    display: inline;
+    padding: 5%;
+}
+
+#indexlist {
+    font-family: "Roboto", sans-serif;
+    font-style: oblique;
+    text-decoration: none;
+    color: antiquewhite;
+
+}
+
+/*--------------------------------*/
+/*--------------MAIN--------------*/
+
+p{
+  font-family: "Roboto", sans-serif;
+}
+
+/*RETIRAR ESTILO DE LINEA*/
+.ul {
+  list-style: none;
+}
+
+/*---------GALERIA--------*/
+
+/*iMAGENES DEGALERIA*/
+.imggallery{
+  height: 250px;
+  border: 100px;
+  padding: 25px;
+  margin: 10px;
+  background-color: rgb(77, 77, 77);
+  align-items: center;
+  border-radius: 20px;
+}
+
+/*---------INDEX--------*/
+
+
+/*FORMATO DE PAGINA PRINCIPAL*/
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 20px;
+  background-color: rgb(240, 192, 22);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+/*IMAGEN DE PAGINA PRINCIPAL*/
+.imgA {
+  height: 500px;
+  border-radius: 20px;
+}
+
+      /*ELEMENTO SLIDER A*/
+.sliderA{
+  padding: 5%;
+}
+
+/*---------SERVICIOS--------*/
+
+/*FORMATO DE SERVICIOS*/
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 375px 375px;
+  /*height: 500px;*/
+  grid-template-areas: 
+    "sanval cert"
+    "diseno3d disenog";
+  
+}
+
+/*IMAGEN DE SERVICIOS*/
+.imggal{
+  height: 250px;
+  border: 100px;
+  padding: 25px;
+  margin: 10px;
+  background-color: rgb(77, 77, 77);
+  align-items: center;
+  border-radius: 20px;
+}
+
+.sanval{
+  grid-area: sanval;
+  text-align: center;
+}
+
+.cert{
+  grid-area: cert;
+  text-align: center;
+}
+
+.diseno3d{
+  grid-area: diseno3d;
+  text-align: center;
+}
+
+.disenog{
+  grid-area: disenog;
+  text-align: center;
+}
+
+
+/*---------GALERIA--------*/
+
+/*FORMATO DE GALERIA*/
+.portfolio{
+  /*display: flex;
+  flex-wrap: nowrap;*/
+  
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  /*height: 500px;*/
+  grid-template-areas: 
+    "moraguinea naturesweet";
+}
+
+.naturesweet {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  /*background-color: rgb(77, 77, 77);*/
+  grid-area: naturesweet;
+}
+
+.moraguinea{
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  /*background-color: rgb(77, 77, 77);*/
+  grid-area: moraguinea;
+}
+
+
+
+/*---------about us--------*/
+
+.aboutus {
+  display: flex;
+}
+
+/*---------about us--------*/
+
+.aboutus{
+  display: flex;
+}
+
+
+  /*IMAGEN ABOUT US*/
+.imgus {
+  height: 500px;
+  border-radius: 20px;
+  padding: 80px;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+/*---------contact us--------*/
+.contact{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  /*height: 500px;*/
+  grid-template-areas: 
+    "contactA contactA contactA"
+    "contactB contactB tel"
+    "contactC contactC tel";
+  background-color: antiquewhite;
+}
+
+.contactA{
+  padding: 8px; 
+  text-align: center;
+  grid-area: contactA;
+}
+
+.contactB{
+  text-align: center; 
+  justify-content: center; 
+  padding: 50px;
+  grid-area: contactB;
+  font-family: "Roboto", sans-serif;
+}
+
+.contactC{
+  text-align: center; 
+  height: 150px;
+  grid-area: contactC;
+  font-family: "Roboto", sans-serif;
+}
+
+.tel{
+  height: 250px;
+  width: 250px;
+  grid-area: tel;
+}
+
+/*--------------------------------*/
+/*--------------FOOTER--------------*/
+
+/*footer {
+    flex-wrap: wrap;
+    display: flex;
+  }*/
+
+.fcontainer {
+  display: flex;
+  text-align: center;
+  background-color: rgb(77, 77, 77);
+}  
+
+
+.listafooter {
+  background-color: rgb(104, 104, 104);
+  flex-wrap: wrap;
+  width: 650px;
+  height: 200px;
+  font-size: 12px;
+}
+
+.textofooter {
+  color: antiquewhite;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: -0px;
+  padding: 0px;
+}
+
+h5 {
+    font-size: 20px;
+    margin: 1%;
+    padding: 30px;
+    font-family: "Roboto", sans-serif;
+  }
+
+
+.logosredes {
+  border: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+/*--------------------------------*/
+/*RESPONSIVE*/
+@media screen and (max-width:768px) {
+/*---------INDEX--------*/
+
+
+/*FORMATO DE PAGINA PRINCIPAL*/
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: rgb(240, 192, 22);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+/*IMAGEN DE PAGINA PRINCIPAL*/
+.imgA {
+  height: 250px;
+  border-radius: 10px;
+}
+lalalalalala
+      /*ELEMENTO SLIDER A*/
+.sliderA{
+  padding: 1%;
+}
+
+}
